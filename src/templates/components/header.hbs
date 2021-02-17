@@ -1,0 +1,25 @@
+<header class="container">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/" data-nav>
+                    <img src="../../images/header-logo.png" alt="Bosa Noga">
+                </a>
+                <div class="collapase navbar-collapse" id="navbarMain">
+                    {{> "./navigation.hbs"}}
+                    <div>
+                        <div class="header-controls-pics">
+                            <div data-id="search-expander" class="header-controls-pic header-controls-search"></div>
+                            <!-- Do programmatic navigation on click to /cart.html -->
+                            <div class="header-controls-pic header-controls-cart">
+                                <div class="header-controls-cart-full">1</div>
+                                <div class="header-controls-cart-menu"></div>
+                            </div>
+                        </div>
+                        {{> "../components/search-form.hbs"}}
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
