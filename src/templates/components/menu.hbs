@@ -1,17 +1,10 @@
-<ul class="catalog-categories nav justify-content-center">
+<ul class="catalog-categories nav justify-content-center" data-categories>
     <li class="nav-item">
-        <a class="nav-link active" href="#">Все</a>
+        <span class="nav-link cursor active first" data-catId=0>Все</span>
     </li>
+    {{#each items}}
     <li class="nav-item">
-        <a class="nav-link" href="#">Женская обувь</a>
+        <span class="nav-link cursor" data-catId={{id}}>{{title}}</span>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Мужская обувь</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Обувь унисекс</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Детская обувь</a>
-    </li>
+    {{/each}}
 </ul>

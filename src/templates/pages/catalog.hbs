@@ -1,12 +1,14 @@
-    <main class="container">
-        <div class="row">
-            <div class="col">
-                {{> "../components/banner.hbs"}}
-                <section class="catalog">
-                    <h2 class="text-center">Каталог</h2>
-                    {{> "../components/search-form.hbs"}}
-                    {{> "../components/catalog-section.hbs"}}
-                </section>
-            </div>
+<main class="container">
+    <div class="row">
+        <div class="col">
+            {{> "../components/banner.hbs"}}
+            <section class="catalog">
+                <h2 class="text-center">Каталог</h2>
+                <form class="catalog-search-form form-inline" onsubmit="return false">
+                    <input data-search class="form-control" placeholder="Поиск">
+                </form>
+                {{> "../components/catalog-section.hbs"}}
+            </section>
         </div>
-    </main>
+    </div>
+</main>
