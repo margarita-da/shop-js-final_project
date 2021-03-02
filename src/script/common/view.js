@@ -20,7 +20,6 @@ export function view(result, zone, render, where) {
   if (Array.isArray(result)) {
     html = render({ items: result })
   } else {
-    console.log(result)
     html = render(result)
   }
   let $row = document.querySelector(zone)
