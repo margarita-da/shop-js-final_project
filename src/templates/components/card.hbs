@@ -1,17 +1,12 @@
 {{#each items}}
 <div class="col-4 data-productId={{id}}">
     <div class="card">
-        {{!-- {{#if images.[1]}} --}}
         <img src={{images.[0]}}
             class="card-img-top img-fluid" alt="Босоножки 'MYER'">
-        {{!-- {{else}} --}}
-        {{!-- <img src={{images.[1]}}
-            class="card-img-top img-fluid" alt="Босоножки 'MYER'"> --}}
-        {{!-- {{/if}} --}}
-        <div class="card-body">
+        <div class="card-body navigation">
             <p class="card-text">{{title}}</p>
             <p class="card-text">{{price}}</p>
-            <a href="/products/1.html" class="btn btn-outline-primary">Заказать</a>
+            <a href="/catalog/{{id}}" class="btn btn-outline-primary" data-nav>Заказать</a>
         </div>
     </div>
 </div>

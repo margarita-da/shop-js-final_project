@@ -1,0 +1,53 @@
+<h2 class="text-center">{{title}}</h2>
+<div class="row">
+    <div class="col-5">
+        <img src={{images.[0]}}
+            class="img-fluid" alt="">
+    </div>
+    <div class="col-7">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td>Артикул</td>
+                    <td>{{sku}}</td>
+                </tr>
+                <tr>
+                    <td>Производитель</td>
+                    <td>{{manufacturer}}</td>
+                </tr>
+                <tr>
+                    <td>Цвет</td>
+                    <td>{{color}}</td>
+                </tr>
+                <tr>
+                    <td>Материалы</td>
+                    <td>{{material}}</td>
+                </tr>
+                <tr>
+                    <td>Сезон</td>
+                    <td>{{season}}</td>
+                </tr>
+                <tr>
+                    <td>Повод</td>
+                    <td>{{reason}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center">
+            <p>Размеры в наличии:
+            {{#each sizes}}
+                <span class="catalog-item-size cursor">{{size}}</span>
+            {{/each}}
+                </p>
+            <p>Количество: <span class="btn-group btn-group-sm pl-2">
+                    <button class="btn prev btn-secondary">-</button>
+                    <span class="btn btn-outline-primary">1</span>
+                    <button class="btn next btn-secondary">+</button>
+                </span>
+            </p>
+        </div>
+        <a href="/cart" data-nav>
+            <button class="btn btn-danger btn-block btn-lg" disabled>В корзину</button></a>
+        
+    </div>
+</div>

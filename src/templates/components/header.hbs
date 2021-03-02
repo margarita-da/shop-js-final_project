@@ -9,12 +9,15 @@
                     {{> "./navigation.hbs"}}
                     <div>
                         <div class="header-controls-pics">
-                            <div data-id="search-expander" class="header-controls-pic header-controls-search"></div>
+                            {{!-- <div data-id="search-expander" class="header-controls-pic header-controls-search"></div> --}}
                             <!-- Do programmatic navigation on click to /cart.html -->
-                            <div class="header-controls-pic header-controls-cart">
-                                <div class="header-controls-cart-full">1</div>
-                                <div class="header-controls-cart-menu"></div>
-                            </div>
+                            <a href="/cart" data-nav>
+                                <div class="header-controls-pic header-controls-cart">
+                                    <div class="header-controls-cart-full">1</div>
+                                    <div class="header-controls-cart-menu"></div>
+                                    
+                                </div>
+                            </a>
                         </div>
                         {{> "../components/search-form.hbs"}}
                     </div>
